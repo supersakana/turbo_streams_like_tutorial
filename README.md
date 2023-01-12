@@ -1,24 +1,14 @@
-# README
+# Ruby on Rails - How to create Like buttons with Turbo Streams
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is going to be a simple tutorial on creating like buttons with turbo streams.
 
-Things you may want to cover:
+### Prerequisites...
 
-* Ruby version
+- A basic understanding of Ruby on Rails
+- Devise to model users that are logged in or not (for this example, a user must be logged in to like posts)
 
-* System dependencies
+## Step 1: Create a User model with Devise
 
-* Configuration
+The reason we need a User modeled with Devise is because they provide a `current_user` method that tracks which user is in session when interacting with out app. If you already have devise (or an alternative way to track a `current_user` in session), you can go ahead and skip this step.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Otherwise, check out [Devise's documentation](https://github.com/heartcombo/devise#getting-started) on how to get started.
